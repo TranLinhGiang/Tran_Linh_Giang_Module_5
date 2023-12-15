@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 2. Sử dụng arrow function và reduce để tính tổng các phần tử trong mảng. -->
+    <script>
+        let array = [1, 2, 3, 4, 5, 9];
+        console.log("Mảng ban đầu= " + array);
+        const sum = array.reduce(function(accumulator, currentValue) {
+            return accumulator + currentValue;
+        });
+        console.log("Tổng các phần tử trong mảng = " + sum);
+    </script>
+
+</body>
+
+</html>

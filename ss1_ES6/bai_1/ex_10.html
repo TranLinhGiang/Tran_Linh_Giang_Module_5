@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Tạo một đối tượng "book" với thuộc tính "title", "author" và "pages" bằng cách sử dụng Enhanced object literals. Đối tượng "book" cũng có phương thức "displayInfo" để in ra thông tin về sách. -->
+    <script>
+        const book = {
+            title: "Đắc nhân tâm",
+            author: "Dale Carnegie",
+            pages: 240,
+            displayInfo() {
+                console.log(`Tên sách: ${this.title}`);
+                console.log(`Tác giả: ${this.author}`);
+                console.log(`Số trang: ${this.pages}`);
+            },
+        };
+        book.displayInfo();
+    </script>
+</body>
+
+</html>

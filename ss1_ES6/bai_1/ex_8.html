@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Sử dụng Rest parameter và Spread operator để tạo một hàm nhận vào danh sách các số và trả về tổng của chúng. -->
+    <script>
+        function sum(...numbers) {
+            let total = 0;
+            for (const number of numbers) {
+                total += number;
+            }
+            return total;
+        }
+        const total = sum(1, 2, 3, 4, 5);
+        console.log("Tổng: " + total);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function welcome(...names) {
+            let message = "Welcome, ";
+            for (const name of names) {
+                message += `${name}, `;
+            }
+            message = message.slice(0, -2);
+            return message;
+        }
+        const message = welcome("Hồng", "Lâm", "Tùng");
+        console.log(message);
+    </script>
+</body>
+
+</html>
