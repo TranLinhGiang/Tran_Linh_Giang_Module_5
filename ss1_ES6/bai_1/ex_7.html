@@ -16,15 +16,12 @@
         }, {
             name: "Jane Doe",
             age: 25
-        }, ];
+        }];
 
-        const {
-            name,
-            age
-        } = people[0];
-
-        console.log(name);
-        console.log(age);
+        for (const person of people) {
+            console.log(person.name);
+            console.log(person.age);
+        }
     </script>
 </body>
 
