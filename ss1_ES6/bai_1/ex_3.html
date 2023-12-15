@@ -11,10 +11,9 @@
     <!-- Kiểm tra 1 mảng có chứa số V hay không nếu có trả về V không thì trả về "không tìm thấy" (some). -->
     <script>
         let array = [0, 1, 2, 3, 4, 5, 6];
-
         console.log("mảng ban đầu = " + array);
-
-        if (array.includes(5)) {
+        const result = array.some(x => x === 5);
+        if (result) {
             console.log("Mảng này có 5");
         } else {
             console.log("Không tìm thấy");
