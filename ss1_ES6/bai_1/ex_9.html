@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <!-- Sử dụng Rest parameter để nhận vào một danh sách tên và trả về chuỗi định dạng "Welcome, [tên1], [tên2], [tên3], ..." cho tất cả các tên. -->
+    <!-- Sử dụng Rest parameter để nhận vào một danh sách tên và trả về chuỗi định dạng "Welcome,
+         [tên1], [tên2], [tên3], ..." cho tất cả các tên. -->
     <script>
         function welcome(...names) {
             let message = "Welcome, ";
@@ -18,7 +19,7 @@
             message = message.slice(0, -2);
             return message;
         }
-        const message = welcome("Hồng", "Lâm", "Tùng");
+        const message = welcome("Giang", "Hữu", "Thuận");
         console.log(message);
     </script>
 </body>
