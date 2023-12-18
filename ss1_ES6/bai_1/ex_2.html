@@ -12,9 +12,7 @@
     <script>
         let array = [1, 2, 3, 4, 5, 9];
         console.log("Mảng ban đầu= " + array);
-        const sum = array.reduce(function(accumulator, currentValue) {
-            return accumulator + currentValue;
-        });
+        const sum = array.reduce((total, currentValue) => total + currentValue, 0);
         console.log("Tổng các phần tử trong mảng = " + sum);
     </script>
 

@@ -10,18 +10,12 @@
 <body>
     <script>
         // Sử dụng destructuring để trích xuất các giá trị "name" và "age" từ một mảng chứa các đối tượng "person"
-        const people = [{
-            name: "John Doe",
-            age: 30
-        }, {
-            name: "Jane Doe",
-            age: 25
-        }];
-
-        for (const person of people) {
-            console.log(person.name);
-            console.log(person.age);
-        }
+        const person = [{name: "Giang",age: 18},
+        {name: "Thuan",age:3},
+        {name: "Huu",age:17}];
+    for (const { name, age } of person) {
+        console.log(`Name: ${name}, Age: ${age}`);
+    }
     </script>
 </body>
 
