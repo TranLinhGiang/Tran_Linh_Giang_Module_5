@@ -56,16 +56,6 @@ button::before {
     transition: 0.3s;
 }
 
-button:hover::before {
-    width: 1.6em;
-    height: 1.6em;
-}
-
-button:active {
-    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
-    transform: translate(0.1em, 0.1em);
-}
-
 #zoom {
     padding: 10px;
     transition: transform .5s;

@@ -9,7 +9,7 @@ root.render(
     // <React.StrictMode>
     // đây là trình debug của react nên  có thể bỏ được 
     <
-    App / >
+App / >
     // </React.StrictMode>
 );
 
