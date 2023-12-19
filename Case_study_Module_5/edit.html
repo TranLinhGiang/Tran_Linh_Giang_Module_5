@@ -149,10 +149,10 @@
 
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="http://127.0.0.1:5501/home.html" class="btn btn-success" aria-current="page" style="width: 100%; text-align: left;">
+                        <a href="http://127.0.0.1:5501/list.html" class="btn btn-success" aria-current="page" style="width: 100%; text-align: left;">
                             <svg class="bi me-2" width="16" height="16">
                                 <use xlink:href="#home" />
-                            </svg> Trở về trang chủ
+                            </svg> Trở về danh sách
                         </a>
                     </li>
                 </ul>
@@ -169,93 +169,66 @@
                     <form class="form-horizontal" role="form">
                         <h2>Thêm dịch vụ Villa</h2>
                         <div class="form-group">
-                            <strong for="firstName" class="col-sm-3 control-label">Tên dịch vụ </strong>
+                            <label for="firstName" class="col-sm-3 control-label">Tên dịch vụ </label>
                             <div class="col-sm-9">
-                             
-                    
-
                                 <input type="text" placeholder="Nhập tên dịch vụ" class="form-control" autofocus>
 
                             </div>
                         </div>
                         <div class="form-group">
-                            <strong class="col-sm-3 control-label">Diện tích sử dụng</strong>
+                            <label class="col-sm-3 control-label">Diện tích sử dụng</label>
                             <div class="col-sm-9">
                                 <input type="text" placeholder="Nhập diện tích sử dụng" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <strong class="col-sm-3 control-label">Diện tích hồ bơi</strong>
+                            <label class="col-sm-3 control-label">Diện tích hồ bơi</label>
                             <div class="col-sm-9">
                                 <input type="text" placeholder="Nhập diện tích hồ bơi" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <strong class="col-sm-3 control-label">Số tầng</strong>
+                            <label class="col-sm-3 control-label">Số tầng</label>
                             <div class="col-sm-9">
-                                <select name="lang" id="lang-select" class="form-control">
-                                    <option value="">--Hãy chọn số tầng--</option>
-                                    <option value="csharp">2</option>
-                                    <option value="cpp">4</option>
-                                    <option value="php">6</option>
-                                    <option value="ruby">8</option>
-                                    <option value="js">10</option>
-                                    <option value="dart">14</option>
-                                </select>
+                                <input type="number" placeholder="Nhập số tầng" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <strong class="col-sm-3 control-label">Tiêu chuẩn phòng</strong>
+                            <label class="col-sm-3 control-label">Tiêu chuẩn phòng</label>
                             <div class="col-sm-9">
-                                <select name="lang" id="lang-select" class="form-control">
-                                    <option value="">--Hãy chọn tiêu chuẩn phòng--</option>
-                                    <option value="csharp">Phòng Bungalow</option>
-                                    <option value="cpp">Phòng Standard (STD)</option>
-                                    <option value="php">Phòng Deluxe (DLX)</option>
-                                    <option value="ruby">Phòng Suite (SUT)</option>
-                                    <option value="js">Phòng Junior Suite</option>
-                                    <option value="dart">Phòng Executive</option>
-                                </select>
+                                <input type="text" placeholder="Nhập tiêu chuẩn phòng" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <strong class="col-sm-3 control-label">Chi phí thuê</strong>
+                            <label class="col-sm-3 control-label">Chi phí thuê</label>
                             <div class="col-sm-9">
                                 <input placeholder="Nhập chi phí thuê" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
-                            <strong class="col-sm-3 control-label">Số lượng người</strong>
+                            <label class="col-sm-3 control-label">Số lượng người</label>
                             <div class="col-sm-9">
-                                <select name="lang" id="lang-select" class="form-control">
-                                    <option value="">--Hãy chọn số lượng người--</option>
-                                    <option value="csharp">1</option>
-                                    <option value="cpp">2</option>
-                                    <option value="php">3</option>
-                                    <option value="ruby">4</option>
-                                    <option value="js">5</option>
-                                    <option value="dart">6</option>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="col-sm-3 control-label">Kiểu thuê</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" aria-placeholder="chọn kiểu thuê">
+                                    <option>theo tháng</option>
+                                    <option>theo năm</option>
+                                    <option>theo ngày</option>
+                                    <option>theo giờ</option>
+                                    
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <strong for="country" class="col-sm-3 control-label">Kiểu thuê</strong>
-                            <div class="col-sm-9">
-                                <select name="lang" id="lang-select" class="form-control">
-                                    <option value="">--Hãy chọn kiểu thuê--</option>
-                                    <option value="csharp">Theo giờ</option>
-                                    <option value="cpp">Theo ngày</option>
-                                    <option value="php">Theo tháng</option>
-                                    <option value="ruby">Theo năm</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <strong class="col-sm-3 control-label">Mô tả tiện nghi khác</strong>
+                            <label class="col-sm-3 control-label">Mô tả tiện nghi khác</label>
                             <div class="col-sm-9">
                                 <textarea style="width: 100%;"></textarea>
                             </div>
@@ -264,7 +237,6 @@
                         <br>
                         <!-- /.form-group -->
                         <div class="form-group">
-                        
                             <div class="col-sm-9 col-sm-offset-3">
                                 <button style="float: right;" type="submit" class="btn btn-success btn-block">Lưu</button>
                             </div>
