@@ -8,11 +8,21 @@ const Job = () => {
     setItem(event.target.value);
   };
 
+  // const handleAddItem = () => {
+  //   if (item.trim() !== "") {
+  //       setList([...list, item]);
+  //       setItem("");
+  //     }
+  // };
+  // Nếu thay đổi state dựa trên state cũ thì nên sử dụng arrow function    
+// Vì có sự bất đồng bộ khi dùng set lai state
+
+// sử dụng ở đoạn này
   const handleAddItem = () => {
     if (item.trim() !== "") {
-        setList([...list, item]);
-        setItem("");
-      }
+      setList((prevList) => [...prevList, item]); 
+      setItem("");
+    }
   };
 
   return (
