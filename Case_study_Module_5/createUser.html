@@ -150,105 +150,99 @@
 
             </div>
             <!-- kết thúc sidebar  -->
-            <!-- bắt đầu div bên phải -->
+       </div>    
+    <!-- bắt đầu div bên phải -->
+    <div class="col-sm-9, col-xs-9,col-md-9, col-lg-9">
+        <div class="container">
+            <form class="form-horizontal" role="form">
+                <h2>Thêm khách hàng</h2>
+                <div class="form-group">
+                    <strong for="firstName" class="col-sm-3 control-label">Họ tên khách hàng </strong>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="Nhập tên khách hàng" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <strong for="firstName" class="col-sm-3 control-label">Ngày sinh</strong>
+                    <div class="col-sm-9">
+                        <input type="date" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <strong class="col-sm-3 control-label">Giới tính</strong>
+                    <div class="col-sm-9">
+                        <select name="lang" id="lang-select" class="form-control">
+                            <option value="">--Hãy chọn giới tính--</option>
+                            <option value="csharp">Nam</option>
+                            <option value="cpp">Nữ</option> 
+                            <option value="php">LGBT</option>
+                           
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <strong class="col-sm-3 control-label">Số chứng minh nhân dân</strong>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="Nhập số chứng minh nhân dân" class="form-control">
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <strong class="col-sm-3 control-label">Số điện thoại</strong>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="Nhập số số điện thoại" class="form-control">
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <strong class="col-sm-3 control-label">Email</strong>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="Nhập Email" class="form-control">
+                        
+                    </div>
+                </div>
+            
+
+                <div class="form-group">
+                    <strong class="col-sm-3 control-label">Loại khách</strong>
+                    <div class="col-sm-9">
+                        <select name="lang" id="lang-select" class="form-control">
+                            <option value="">--Hãy chọn loại khách--</option>
+                            <option value="csharp">Diamond</option>
+                            <option value="cpp">Platinium</option>
+                            <option value="php">Gold</option>
+                            <option value="ruby">Silver</option>
+                            <option value="js">Member</option>
+                        
+                        </select>
+                    </div>
+                </div>
+                
+
+                <div class="form-group">
+                    <strong class="col-sm-3 control-label">Địa chỉ</strong>
+                    <div class="col-sm-9">
+                        <textarea placeholder="Nhập chi phí thuê" class="form-control"></textarea>
+                    </div>
+                </div>
+            
+
+                <br>
+                <!-- /.form-group -->
+                <div class="form-group">
+                
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button style="float: right;" type="submit" class="btn btn-success btn-block">Lưu</button>
+                    </div>
+                </div>
+            </form>
+            <!-- /form -->
         </div>
-        <div class="col-sm-12, col-xs-12,col-md-9, col-lg-9">
-            <div class="col-xs-12, col-sm-12, col-md-12, col-lg-12" style="display: flex; flex-wrap: wrap;">
-                <div class="col-sm-12, col-xs-12, col-md-4">
-
-                    <div class="card" style="width: 18rem; margin: 5px;">
-                        <img id="zoom" src="picture/phong.jpg" class="card-img-top, img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">OCEAN SUITE</h5>
-                            <p class="card-text">Room size: 85.5 m<sup>2</sup></p>
-
-                            <a href="http://127.0.0.1:5501/edit.html" class="btn btn-primary">Chỉnh sửa</a>
-                            <button style="float: right;" href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Xóa</button>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-12, col-xs-12, col-md-4">
-                    <div class="card" style="width: 18rem; margin: 5px;">
-                        <img id="zoom" src="picture/phong2.jpg" class="card-img-top, img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">OCEAN STUDIO SUITE</h5>
-                            <p class="card-text">Room size: 85.5 m<sup>2</sup></p>
-                            <a href="http://127.0.0.1:5501/edit.html" class="btn btn-primary">Chỉnh sửa</a>
-                            <button style="float: right;" href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Xóa</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12, col-xs-12, col-md-4">
-                    <div class="card" style="width: 18rem; margin: 5px;">
-                        <img id="zoom" src="picture/phong3.jpg" class="card-img-top, img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">OCEAN DELUXE</h5>
-                            <p class="card-text">Room size: 85.5 m<sup>2</sup></p>
-                            <a href="http://127.0.0.1:5501/edit.html" class="btn btn-primary">Chỉnh sửa</a>
-                            <button style="float: right;" href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Xóa</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12, col-xs-12, col-md-4">
-                    <div class="card" style="width: 18rem; margin: 5px;">
-                        <img id="zoom" src="picture/phong4.jpg" class="card-img-top, img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">OCEAN SUITE</h5>
-                            <p class="card-text">Room size: 85.5 m<sup>2</sup></p>
-                            <a href="http://127.0.0.1:5501/edit.html" class="btn btn-primary">Chỉnh sửa</a>
-                            <button style="float: right;" href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Xóa</button>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-12, col-xs-12, col-md-4">
-                    <div class="card" style="width: 18rem; margin: 5px;">
-                        <img id="zoom" src="picture/phong5.jpg" class="card-img-top, img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">OCEAN SUITE</h5>
-                            <p class="card-text">Room size: 85.5 m<sup>2</sup></p>
-                            <a href="http://127.0.0.1:5501/edit.html" class="btn btn-primary">Chỉnh sửa</a>
-                            <button style="float: right;" href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Xóa</button>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12, col-xs-12, col-md-4">
-                    <div class="card" style="width: 18rem; margin: 5px;">
-                        <img id="zoom" src="picture/phong6.png" class="card-img-top, img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">OCEAN SUITE</h5>
-                            <p class="card-text">Room size: 85.5 m<sup>2</sup></p>
-                            <a href="http://127.0.0.1:5501/edit.html" class="btn btn-primary">Chỉnh sửa</a>
-                            <button style="float: right;" href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Xóa</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <!-- phân trang -->
-            <div> 
-                <nav aria-label="Page navigation example" style="float: right;" >
-                    <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                  </nav>
-            </div>
-            <!-- phân trang -->
-
-        </div>
-        <!-- kết thúc <div bên phải</div> -->
-         
     </div>
+        <!-- kết thúc <div bên phải</div> -->
+    </div>
+ 
     <!-- body part -->
     <!-- footer -->
     <footer class="new_footer_area bg_color">
@@ -327,24 +321,7 @@
     <!-- footer -->
     </div>
     <!-- div tổng -->
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Bạn có muốn xóa phòng này
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Không</button>
-          <button type="button" class="btn btn-danger">Xoá</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </body>
 
 
