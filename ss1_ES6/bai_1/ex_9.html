@@ -11,16 +11,8 @@
     <!-- Sử dụng Rest parameter để nhận vào một danh sách tên và trả về chuỗi định dạng "Welcome,
          [tên1], [tên2], [tên3], ..." cho tất cả các tên. -->
     <script>
-        function welcome(...names) {
-            let message = "Welcome, ";
-            for (const name of names) {
-                message += `${name} ,`;
-            }
-            message = message.slice(0, -2);
-            return message;
-        }
-        const message = welcome("Giang", "Hữu", "Thuận");
-        console.log(message);
+         let message = (...name) =>"Welcome "+ name;
+    console.log(message("Thuận","Giang","Hữu"));
     </script>
 </body>
 

@@ -10,15 +10,8 @@
 <body>
     <!-- Sử dụng Rest parameter và Spread operator để tạo một hàm nhận vào danh sách các số và trả về tổng của chúng. -->
     <script>
-        function sum(...numbers) {
-            let total = 0;
-            for (const number of numbers) {
-                total += number;
-            }
-            return total;
-        }
-        const total = sum(1, 2, 3, 4, 5);
-        console.log("Tổng: " + total);
+         let sum = (...number) => number.reduce((x, y) => x + y)
+    console.log(sum(1, 2, 3));
     </script>
 </body>
 
