@@ -5,7 +5,7 @@ function Counter(){
     const [count, setCount] = useState(0);
     const [counts, setCounts] = useState(0);
    const click= (count) => setCount(preCount=>preCount+1);
-   const clicks= (counts) => setCounts(preCount=>preCount+1);
+   const clicks= (counts) => setCounts(preCount=>preCount+2);
     return(
         <>
         <p>Count: {count}</p>
