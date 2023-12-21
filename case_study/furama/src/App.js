@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from "./components/Home/Home";
+import Paperbase from "./Layout/Paperbase/Paperbase";
 
 function App() {
-  return (
-    <Home/>
-  );
+<Router>
+  <Route path={"dashboard"} element={<Paperbase/>}></Route>
+</Router>
 }
 
 export default App;
