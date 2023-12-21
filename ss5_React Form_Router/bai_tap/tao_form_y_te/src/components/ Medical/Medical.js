@@ -99,7 +99,8 @@ export default function Medical() {
          home:"",
          numberPhone:"",
          email:"",
-
+         // gender_male:"",
+         // gender_female:""
      },
      onSubmit: values => {
          alert(JSON.stringify(values, null, 2));
@@ -171,8 +172,8 @@ export default function Medical() {
                             aria-labelledby="demo-row-radio-buttons-group-label"
                             name="row-radio-buttons-group"
                         >
-                            <FormControlLabel  value="female" control={<Radio />} label="Nam" />
-                            <FormControlLabel  value="male" control={<Radio />} label="Nữ" />
+                            <FormControlLabel name="gender_male"  control={<Radio name="gender"/>} label="Nam" />
+                            <FormControlLabel name="gender_female" control={<Radio name="gender"/>} label="Nữ" />
 
                         </RadioGroup>
                         <TextField
@@ -288,13 +289,8 @@ export default function Medical() {
                             error={formMedical.touched && formMedical.errors.email}
                             helperText={formMedical.touched && formMedical.errors.email}
                         />
-
                             <h2>Trong vòng 14 ngày qua ,Anh/chị có đến quốc gia/vùng lãnh thổ nào(Có thể đi qua nhiều quốc gia)</h2>
                             <textarea></textarea>
-
-
-
-
 
                         <h2>Trong vòng 14 ngày qua ,Anh/chị có xuất hiện dấu hiệu nào sau đây không</h2>
                         <FormGroup>
