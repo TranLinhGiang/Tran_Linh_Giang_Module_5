@@ -40,22 +40,22 @@ const MedicalSchema = Yup.object().shape({
     name: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required('yêu cầu nhập họ và '),
     passport: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required(' yêu cầu nhập '),
     age: Yup.number()
         .min(1991, '> 1990')
-        .required('Required'),
+        .required('yêu cầu nhập năm sinh'),
     nationality: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required(' yêu cầu nhập quốc tịch'),
     company: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required(' yêu cầu nhập công ty làm việc'),
     part: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
@@ -63,24 +63,24 @@ const MedicalSchema = Yup.object().shape({
     province: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required(' yêu cầu nhập bộ phận làm việc'),
     district: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required('yêu cầu nhập tỉnh thành'),
     ward: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required(' yêu cầu nhập quận/huyện'),
     home: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
+        .required(' yêu cầu nhập phường/xã'),
     numberPhone: Yup.string()
         .min(2, 'Too Short!')
         .max(50, 'Too Long!')
-        .required('Required'),
-    email: Yup.string().email('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\\\.[a-zA-Z0-9-.]+$\'').required('Required'),
+        .required('yêu cầu nhập số nhà'),
+    email: Yup.string().email('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\\\.[a-zA-Z0-9-.]+$\'').required(' yêu cầu nhập email'),
 });
 
 export default function Medical() {
