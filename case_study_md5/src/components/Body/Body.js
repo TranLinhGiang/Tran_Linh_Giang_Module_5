@@ -9,6 +9,7 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import FormatListNumberedRtlIcon from '@mui/icons-material/FormatListNumberedRtl';
 import Card from 'react-bootstrap/Card';
 import "./message.css"
+import {Link} from "react-router-dom"
 function Body() {
     return (
         <>
@@ -16,16 +17,11 @@ function Body() {
             <div className=" total col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div className=" col-xs-3 col-sm-3 col-md-3 col-lg-3">
                         <div className="sidebar">
-                            <Button className="but" variant="success"><p><PlaylistAddIcon/> Thêm mới dịch vụ</p></Button>{' '}
-
-                            <Button className="but" variant="success"><p><PersonIcon/> Thêm mới khách hàng</p></Button>{' '}
-
-                            <Button className="but" variant="success"><p><LibraryBooksIcon/> Thêm mới hợp đồng</p></Button>{' '}
-
-                            <Button className="but" variant="success"><p><ListAltIcon/> Danh sách phòng</p></Button>{' '}
-
-                            <Button className="but" variant="success"><p><FormatListNumberedRtlIcon/> Danh sách hợp đồng</p>
-                            </Button>{' '}
+                            <Link to={"/create-service"}><Button className="but" variant="success"><p><PlaylistAddIcon/>Thêm mới dịch vụ</p></Button>{' '}</Link>
+                            <Link to={"/create-customer"} ><Button className="but" variant="success"><p><PersonIcon/> Thêm mới khách hàng</p></Button>{' '}</Link>
+                            <Link to={"/create-contract"}>  <Button className="but" variant="success"><p><LibraryBooksIcon/> Thêm mới hợp đồng</p></Button>{' '}</Link>
+                            <Link to={"/list-customer"}>  <Button className="but" variant="success"><p><ListAltIcon/> Danh sách khách hàng</p></Button>{' '}</Link>
+                            <Link to={"/list-contract"}> <Button className="but" variant="success"><p><FormatListNumberedRtlIcon/> Danh sách hợp đồng</p></Button>{' '}</Link>
                         </div>
                     </div>
                 {/*sidebar*/}
