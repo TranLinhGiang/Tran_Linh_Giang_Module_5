@@ -1,0 +1,27 @@
+.tong {
+    width: 100%;
+    background: white;
+    display: flex;
+    position: fixed;
+    z-index: 500;
+}
+
+.logo {
+    width: 250px;
+    height: 120px;
+}
+
+.map {
+position: relative;
+    left: -20%;
+    top: 15px;
+}
+
+.phone {
+    position: relative;
+    left: -10%;
+    top: 15px;
+}
+.front{
+    font-size: revert;
+}

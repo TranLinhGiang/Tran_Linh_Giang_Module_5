@@ -1,0 +1,25 @@
+.footers{
+
+   position: relative;
+    top: 200px;
+    display: flex;
+    background: #d0d0d0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #4b505e;
+}
+.gui{
+    position: relative;
+    left: 4px;
+    height: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*************footer End*****************/
