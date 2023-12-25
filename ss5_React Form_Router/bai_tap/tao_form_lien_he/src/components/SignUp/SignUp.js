@@ -31,17 +31,17 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 const SignupSchema = Yup.object().shape({
     name: Yup.string()
-        .min(3, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(3, 'Tên quá ngắn!')
+        .max(50, 'Tên quá dài!')
         .required('yêu cầu nhập tên'),
     phone: Yup.string()
-        .min(3, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(3, 'Số điện thoại quá ngắn!')
+        .max(50, 'Số điện thoại quá dài!')
         .required('yêu cầu nhập số điện thoại'),
     email: Yup.string().email('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$').required('yêu cầu nhập email'),
     message: Yup.string()
-        .min(4, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(4, 'message quá ngắn!')
+        .max(50, 'message quá dài!')
         .required('yêu cầu nhập message'),
 });
 

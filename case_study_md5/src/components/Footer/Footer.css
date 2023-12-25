@@ -1,6 +1,5 @@
-.footers{
-
-   position: relative;
+.footers {
+    position: relative;
     top: 200px;
     display: flex;
     background: #d0d0d0;
@@ -13,13 +12,16 @@ h5,
 h6 {
     color: #4b505e;
 }
-.gui{
+
+.gui {
     position: relative;
     left: 4px;
     height: 35px;
 }
-a{
+
+.a{
     text-decoration: none;
     color: black;
 }
+
 /*************footer End*****************/

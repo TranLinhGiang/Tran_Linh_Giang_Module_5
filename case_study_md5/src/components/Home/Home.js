@@ -7,10 +7,18 @@ import React from "react";
 function Home() {
     return (
         <>
-            <Header/>
-            <PictureBody/>
-            <Body/>
-            <Footer/>
+            <div>
+                <Header/>
+            </div>
+            <div>
+                <PictureBody/>
+            </div>
+            <div>
+                <Body/>
+            </div>
+            <div>
+                <Footer/>
+            </div>
         </>
     )
 }

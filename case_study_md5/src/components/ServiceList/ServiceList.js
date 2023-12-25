@@ -1,12 +1,11 @@
-import "./ListCustomer.css"
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import {Link} from "react-router-dom";
+
 import * as React from "react";
+import {Link} from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import Table from 'react-bootstrap/Table';
-import Pagination from 'react-bootstrap/Pagination';
-function ListCustomer() {
+import Table from "react-bootstrap/Table";
+function ServiceList() {
     return (
         <>
             <div>
@@ -22,20 +21,13 @@ function ListCustomer() {
                 </div>
                 <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                     <React.Fragment>
-                        <h3>Danh sách khách hàng</h3>
+                        <h3>Danh sách các dịch vụ tại Furama</h3>
                         <Grid container spacing={3}>
                             <Table className="table" >
                                 <thead>
                                 <tr>
                                     <th>STT</th>
-                                    <th>Họ và tên</th>
-                                    <th>CCCD</th>
-                                    <th>SĐT</th>
-                                    <th>Email</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Giới tính</th>
-                                    <th>Loại khách hàng</th>
-                                    <th>Địa chỉ</th>
+                                    <th>Tên dịch vụ</th>
                                     <th>Sửa</th>
                                     <th>Xóa</th>
                                 </tr>
@@ -43,14 +35,7 @@ function ListCustomer() {
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Trần Linh Giang</td>
-                                    <td>044202222337</td>
-                                    <td>0814742505</td>
-                                    <td>gt07839@gmaiil.com</td>
-                                    <td>04/01/2002</td>
-                                    <td>Nam</td>
-                                    <td>Gold</td>
-                                    <td>Quảng Bình</td>
+                                    <td>Dịch vụ 1</td>
                                     <td>
                                         <button className="btn btn-primary">Sửa</button>
                                     </td>
@@ -60,14 +45,7 @@ function ListCustomer() {
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Trương Minh Thuận</td>
-                                    <td>044208222367</td>
-                                    <td>0454742507</td>
-                                    <td>thuantm123@gmaiil.com</td>
-                                    <td>04/01/1996</td>
-                                    <td>Nam</td>
-                                    <td>Sliver</td>
-                                    <td>Quảng Trị</td>
+                                    <td>Dịch vụ 2</td>
                                     <td>
                                         <button className="btn btn-primary">Sửa</button>
                                     </td>
@@ -77,14 +55,7 @@ function ListCustomer() {
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Đinh Quốc Tuấn</td>
-                                    <td>044208222367</td>
-                                    <td>0454742507</td>
-                                    <td>tuan123@gmaiil.com</td>
-                                    <td>04/01/1996</td>
-                                    <td>Nam</td>
-                                    <td>Sliver</td>
-                                    <td>TP.HCM</td>
+                                    <td>Dịch vụ 3</td>
                                     <td>
                                         <button className="btn btn-primary">Sửa</button>
                                     </td>
@@ -94,14 +65,7 @@ function ListCustomer() {
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Nguyễn Tiến Anh</td>
-                                    <td>044208222367</td>
-                                    <td>0454742507</td>
-                                    <td>anh123@gmaiil.com</td>
-                                    <td>04/01/1996</td>
-                                    <td>Nam</td>
-                                    <td>Sliver</td>
-                                    <td>Hà Nội</td>
+                                    <td>Dịch vụ 4</td>
                                     <td>
                                         <button className="btn btn-primary">Sửa</button>
                                     </td>
@@ -112,16 +76,19 @@ function ListCustomer() {
 
                                 </tbody>
                             </Table>
+
+
                         </Grid>
                     </React.Fragment>
                 </div>
-                
+
+
             </div>
-            <div >
+
+            <div>
                 <Footer/>
             </div>
         </>
     )
 }
-
-export default ListCustomer;
+export default ServiceList;

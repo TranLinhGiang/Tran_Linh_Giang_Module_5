@@ -38,47 +38,43 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 const MedicalSchema = Yup.object().shape({
     name: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
-        .required('yêu cầu nhập họ và '),
+        .min(2, 'tên quá ngắn!')
+        .max(50, 'Tên quá dài!')
+        .required('yêu cầu nhập họ và tên'),
     passport: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
-        .required(' yêu cầu nhập '),
+        .min(2, 'số hộ chiếu quá ngắn!')
+        .max(50, 'số hộ chiếu quá dài!')
+        .required(' yêu cầu nhập số hộ chiếu'),
     age: Yup.number()
         .min(1991, '> 1990')
         .required('yêu cầu nhập năm sinh'),
     nationality: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
-        .required(' yêu cầu nhập quốc tịch'),
+            .min(2, 'Tên quốc tịch quá ngắn!')
+            .max(50, 'Tên quốc tịch quá dài!')
+            .required(' yêu cầu nhập quốc tịch'),
     company: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(2, 'Tên công ty quá ngắn!')
+        .max(50, 'Tên công ty quá dài!')
         .required(' yêu cầu nhập công ty làm việc'),
     part: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
-        .required('Required'),
+        .min(2, 'Tên bộ phận quá ngắn!')
+        .max(50, 'Tên bộ phận quá dài!')
+        .required('Yêu cầu nhập bộ phận làm việc'),
     province: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
-        .required(' yêu cầu nhập bộ phận làm việc'),
-    district: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
-        .required('yêu cầu nhập tỉnh thành'),
+        .min(2, 'Địa chỉ quá ngắn!')
+        .max(50, 'Địa chỉ quá dài!')
+        .required(' yêu cầu nhập địa chỉ tại Việt Nam'),
     ward: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(2, 'Tên quận/huyện quá ngắn!')
+        .max(50, 'Tên quận/huyện quá dài!')
         .required(' yêu cầu nhập quận/huyện'),
     home: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(2, 'Tên phường/xã quá ngắn!')
+        .max(50, 'Tên phường/xã quá dài!')
         .required(' yêu cầu nhập phường/xã'),
     numberPhone: Yup.string()
-        .min(2, 'Too Short!')
-        .max(50, 'Too Long!')
+        .min(2, 'Địa chỉ nhà quá ngắn!')
+        .max(50, 'Địa chỉ nhà quá dài!')
         .required('yêu cầu nhập số nhà'),
     email: Yup.string().email('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\\\.[a-zA-Z0-9-.]+$\'').required(' yêu cầu nhập email'),
 });

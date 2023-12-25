@@ -7,6 +7,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import FormatListNumberedRtlIcon from '@mui/icons-material/FormatListNumberedRtl';
+import ListIcon from '@mui/icons-material/List';
 import Card from 'react-bootstrap/Card';
 import "./message.css"
 import {Link} from "react-router-dom"
@@ -22,6 +23,8 @@ function Body() {
                             <Link to={"/create-contract"}>  <Button className="but" variant="success"><p><LibraryBooksIcon/> Thêm mới hợp đồng</p></Button>{' '}</Link>
                             <Link to={"/list-customer"}>  <Button className="but" variant="success"><p><ListAltIcon/> Danh sách khách hàng</p></Button>{' '}</Link>
                             <Link to={"/list-contract"}> <Button className="but" variant="success"><p><FormatListNumberedRtlIcon/> Danh sách hợp đồng</p></Button>{' '}</Link>
+                            <Link to={"/list-service"}> <Button className="but" variant="success"><p><ListIcon/>Danh sách các dịch vụ</p></Button>{' '}</Link>
+
                         </div>
                     </div>
                 {/*sidebar*/}
@@ -151,13 +154,7 @@ function Body() {
                     </div>
                 </div>
             </div>
-            {/*slide*/}
-
-
-
-            {/*slide*/}
         </>
     )
 }
-
 export default Body;
