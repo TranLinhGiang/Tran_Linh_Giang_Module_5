@@ -1,11 +1,14 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
 import * as React from "react";
 import {Link} from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Table from "react-bootstrap/Table";
+import {useEffect} from "react";
 function ServiceList() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <div>
@@ -49,7 +52,9 @@ function ServiceList() {
                                     <td>2</td>
                                     <td>Dịch vụ 2</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-service"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -59,7 +64,9 @@ function ServiceList() {
                                     <td>3</td>
                                     <td>Dịch vụ 3</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-service"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -69,8 +76,9 @@ function ServiceList() {
                                     <td>4</td>
                                     <td>Dịch vụ 4</td>
                                     <td>
-
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-service"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -84,8 +92,6 @@ function ServiceList() {
                         </Grid>
                     </React.Fragment>
                 </div>
-
-
             </div>
 
             <div>

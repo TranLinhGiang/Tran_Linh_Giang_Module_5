@@ -35,3 +35,16 @@ p{
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
 }
+.dropdown{
+    width: 100%;
+    margin: 1%;
+}
+.addService{
+    text-align: left;
+}
+.add{
+    width: 100%;
+    color: black;
+    background: white;
+    border: none;
+}

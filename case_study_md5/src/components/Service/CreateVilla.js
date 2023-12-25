@@ -5,7 +5,11 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import {Link} from "react-router-dom"
-function CreateService() {
+import {useEffect} from "react";
+function CreateVilla() {
+    useEffect(()=> {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <div>
@@ -21,7 +25,7 @@ function CreateService() {
                 </div>
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                     <React.Fragment>
-                        <h3>Thêm mới dịch vụ</h3>
+                        <h3>Thêm mới Villa</h3>
                         <Grid container spacing={3}>
                             <Grid item xs={12} sm={6}>
                                 <TextField
@@ -140,4 +144,4 @@ function CreateService() {
     )
 }
 
-export default CreateService;
+export default CreateVilla;

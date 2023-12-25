@@ -1,11 +1,11 @@
-import "./CreateContract.css"
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import {Link} from "react-router-dom";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import {useEffect} from "react";
-function CreateContract() {
+
+function EditContract() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -24,7 +24,7 @@ function CreateContract() {
                 </div>
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                     <React.Fragment>
-                        <h3>Thêm mới hợp đồng</h3>
+                        <h3>Chỉnh sửa hợp đồng</h3>
                         <Grid container spacing={3}>
 
                             <Grid item xs={12} >
@@ -61,4 +61,4 @@ function CreateContract() {
     )
 }
 
-export default CreateContract;
+export default EditContract;

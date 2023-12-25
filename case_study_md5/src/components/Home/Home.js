@@ -2,7 +2,7 @@ import Header from "../Header/Header";
 import PictureBody from "../PictureBody/PictureBody";
 import Body from "../Body/Body";
 import Footer from "../Footer/Footer";
-import React from "react";
+import React, {useEffect} from "react";
 
 function Home() {
     return (
@@ -22,5 +22,4 @@ function Home() {
         </>
     )
 }
-
 export default Home;

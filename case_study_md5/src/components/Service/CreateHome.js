@@ -1,12 +1,12 @@
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import {Link} from "react-router-dom";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
+import Footer from "../Footer/Footer";
 import {useEffect} from "react";
 
-function EditService() {
+function CreateHome() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -18,14 +18,14 @@ function EditService() {
             <div className="body-form col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 
-                    <Link to={"/list-service"}>
-                        <button className=" back btn btn-success">Trở về danh sách</button>
+                    <Link to={"/"}>
+                        <button className=" back btn btn-success">Trở về trang chủ</button>
                     </Link>
 
                 </div>
                 <div className="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                     <React.Fragment>
-                        <h3>Chỉnh sửa dịch vụ</h3>
+                        <h3>Thêm mới Home</h3>
                         <Grid container spacing={3}>
                             <Grid item xs={12} sm={6}>
                                 <TextField
@@ -46,17 +46,6 @@ function EditService() {
                                     label="Diện tích sử dụng"
                                     fullWidth
                                     autoComplete="family-name"
-                                    variant="standard"
-                                />
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <TextField
-                                    required
-                                    id="address1"
-                                    name="address1"
-                                    label="Diện tích hồ bơi"
-                                    fullWidth
-                                    autoComplete="shipping address-line1"
                                     variant="standard"
                                 />
                             </Grid>
@@ -107,7 +96,7 @@ function EditService() {
                                     <option value="dart">6</option>
                                 </select>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item xs={12}>
                                 <label className="color"> Kiểu thuê</label>
                                 <select className="input form-control">
                                     <option value="">--Hãy chọn kiểu thuê--</option>
@@ -142,4 +131,5 @@ function EditService() {
         </>
     )
 }
-export default EditService;
+
+export default CreateHome;

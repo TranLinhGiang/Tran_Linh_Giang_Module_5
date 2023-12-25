@@ -5,8 +5,11 @@ import {Link} from "react-router-dom";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Table from 'react-bootstrap/Table';
-import Pagination from 'react-bootstrap/Pagination';
+import {useEffect} from "react";
 function ListCustomer() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <div>
