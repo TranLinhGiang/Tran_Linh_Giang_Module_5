@@ -52,7 +52,9 @@ function ListCustomer() {
                                     <td>Gold</td>
                                     <td>Quảng Bình</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-customer"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -69,8 +71,11 @@ function ListCustomer() {
                                     <td>Sliver</td>
                                     <td>Quảng Trị</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-customer"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
+
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
                                     </td>
@@ -86,7 +91,9 @@ function ListCustomer() {
                                     <td>Sliver</td>
                                     <td>TP.HCM</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-customer"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -103,7 +110,9 @@ function ListCustomer() {
                                     <td>Sliver</td>
                                     <td>Hà Nội</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-customer"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -123,5 +132,4 @@ function ListCustomer() {
         </>
     )
 }
-
 export default ListCustomer;

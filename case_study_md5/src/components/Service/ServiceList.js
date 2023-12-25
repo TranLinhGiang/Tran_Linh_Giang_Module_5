@@ -37,7 +37,9 @@ function ServiceList() {
                                     <td>1</td>
                                     <td>Dịch vụ 1</td>
                                     <td>
-                                        <button className="btn btn-primary">Sửa</button>
+                                        <Link to={"/edit-service"}>
+                                            <button className="btn btn-primary">Sửa</button>
+                                        </Link>
                                     </td>
                                     <td>
                                         <button className="btn btn-danger">Xóa</button>
@@ -67,6 +69,7 @@ function ServiceList() {
                                     <td>4</td>
                                     <td>Dịch vụ 4</td>
                                     <td>
+
                                         <button className="btn btn-primary">Sửa</button>
                                     </td>
                                     <td>
