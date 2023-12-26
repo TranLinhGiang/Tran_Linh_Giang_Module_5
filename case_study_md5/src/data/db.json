@@ -1,0 +1,37 @@
+{
+  "customerList": [
+    {
+      "id": 1,
+      "name": "Trần Linh Giang",
+      "identity": "044202002337",
+      "numberPhone": "0814875647",
+      "email": "gt07839@gmail.com",
+      "dateOfBirth": "04-01-2002",
+      "gender": "Nam",
+      "customerType": "Gold",
+      "address": "Quảng Bình"
+    },
+    {
+      "id": 2,
+      "name": "Phạm Thanh Hữu",
+      "identity": "044202002337",
+      "numberPhone": "0814875647",
+      "email": "gt07839@gmail.com",
+      "dateOfBirth": "04-01-2002",
+      "gender": "Nam",
+      "customerType": "Gold",
+      "address": "Đà Nẵng"
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn Văn A",
+      "identity": "064702002337",
+      "numberPhone": "0814875647",
+      "email": "gt07839@gmail.com",
+      "dateOfBirth": "04-01-2002",
+      "gender": "Nam",
+      "customerType": "Gold",
+      "address": "Sài Gòn"
+    }
+  ]
+}

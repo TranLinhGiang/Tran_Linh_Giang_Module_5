@@ -6,10 +6,24 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Table from 'react-bootstrap/Table';
 import {useEffect} from "react";
+import {useState} from "react";
+import * as method from "../../Service/method";
+
 function ListCustomer() {
+    const [customerList, setCustomerList] = useState([]);
+
+    const getAll = async () => {
+        let data = await method.getAllCustomerList();
+        setCustomerList(data);
+    }
+
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        getAll()
+    }, []);
     return (
         <>
             <div>
@@ -27,7 +41,7 @@ function ListCustomer() {
                     <React.Fragment>
                         <h3>Danh sách khách hàng</h3>
                         <Grid container spacing={3}>
-                            <Table className="table" >
+                            <Table className="table">
                                 <thead>
                                 <tr>
                                     <th>STT</th>
@@ -44,95 +58,39 @@ function ListCustomer() {
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Trần Linh Giang</td>
-                                    <td>044202222337</td>
-                                    <td>0814742505</td>
-                                    <td>gt07839@gmaiil.com</td>
-                                    <td>04/01/2002</td>
-                                    <td>Nam</td>
-                                    <td>Gold</td>
-                                    <td>Quảng Bình</td>
-                                    <td>
-                                        <Link to={"/edit-customer"}>
-                                            <button className="btn btn-primary">Sửa</button>
-                                        </Link>
-                                    </td>
-                                    <td>
-                                        <button className="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Trương Minh Thuận</td>
-                                    <td>044208222367</td>
-                                    <td>0454742507</td>
-                                    <td>thuantm123@gmaiil.com</td>
-                                    <td>04/01/1996</td>
-                                    <td>Nam</td>
-                                    <td>Sliver</td>
-                                    <td>Quảng Trị</td>
-                                    <td>
-                                        <Link to={"/edit-customer"}>
-                                            <button className="btn btn-primary">Sửa</button>
-                                        </Link>
-                                    </td>
-
-                                    <td>
-                                        <button className="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Đinh Quốc Tuấn</td>
-                                    <td>044208222367</td>
-                                    <td>0454742507</td>
-                                    <td>tuan123@gmaiil.com</td>
-                                    <td>04/01/1996</td>
-                                    <td>Nam</td>
-                                    <td>Sliver</td>
-                                    <td>TP.HCM</td>
-                                    <td>
-                                        <Link to={"/edit-customer"}>
-                                            <button className="btn btn-primary">Sửa</button>
-                                        </Link>
-                                    </td>
-                                    <td>
-                                        <button className="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Nguyễn Tiến Anh</td>
-                                    <td>044208222367</td>
-                                    <td>0454742507</td>
-                                    <td>anh123@gmaiil.com</td>
-                                    <td>04/01/1996</td>
-                                    <td>Nam</td>
-                                    <td>Sliver</td>
-                                    <td>Hà Nội</td>
-                                    <td>
-                                        <Link to={"/edit-customer"}>
-                                            <button className="btn btn-primary">Sửa</button>
-                                        </Link>
-                                    </td>
-                                    <td>
-                                        <button className="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-
+                                {customerList.map((item,index )=> (
+                                    <tr key={item.id}>
+                                        <td>{index+1}</td>
+                                        <td>{item.name}</td>
+                                        <td>{item.identity}</td>
+                                        <td>{item.numberPhone}</td>
+                                        <td>{item.email}</td>
+                                        <td>{item.dateOfBirth}</td>
+                                        <td>{item.gender}</td>
+                                        <td>{item.customerType}</td>
+                                        <td>{item.address}</td>
+                                        <td>
+                                            <Link to={"/edit-customer"}>
+                                                <button className="btn btn-primary">Sửa</button>
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <button className="btn btn-danger">Xóa</button>
+                                        </td>
+                                    </tr>
+                                ))}
                                 </tbody>
                             </Table>
                         </Grid>
                     </React.Fragment>
                 </div>
-                
+
             </div>
-            <div >
+            <div>
                 <Footer/>
             </div>
         </>
     )
 }
+
 export default ListCustomer;
