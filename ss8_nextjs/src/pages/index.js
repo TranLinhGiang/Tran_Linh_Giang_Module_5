@@ -4,7 +4,6 @@ import React from "react";
 const Home = ({ covids }) => {
     return (
         <>
-
             <h1>Thông tin COVID-19 tại Việt Nam</h1>
             <table >
                 <thead>
@@ -34,7 +33,7 @@ const Home = ({ covids }) => {
 };
 export const getStaticProps = async () => {
     try {
-        const response = await axios.get('http://localhost:8081/covids');
+        const response = await axios.get('http://localhost:8080/covids');
         const covids = response.data                    ;
         return {
             props: {
